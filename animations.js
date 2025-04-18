@@ -1,5 +1,3 @@
-alert("JavaScript está funcionando!");
-
 document.addEventListener("DOMContentLoaded", function () {
   const observer1 = new IntersectionObserver(
     (entries) => {
