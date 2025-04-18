@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil - AniPet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <img
+          src="https://i.imgur.com/sJcREvO.png"
+          alt="Avatar"
+          style="
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+          "
+        />
+        <h2 id="nomeUsuario">Nome do Usuário</h2>
+
+        <div class="input-group" style="margin-bottom: 10px">
+          <i class="bi bi-envelope-fill"></i>
+          <input type="email" value="usuario@email.com" disabled />
+        </div>
+        <div class="input-group" style="margin-bottom: 20px">
+          <i class="bi bi-person-fill"></i>
+          <input type="text" value="Nome Completo" disabled />
+        </div>
+
+        <button class="login-btn" onclick="logout()">Sair da conta</button>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("nomeUsuario").innerText =
+        localStorage.getItem("nomeUsuario") || "Usuário Exemplo";
+
+      function logout() {
+        localStorage.removeItem("nomeUsuario");
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AniPet - Pet Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>  
+  <body>
+    <header class="header">
+      <div class="container-header">
+        <div class="esquerda-header">
+          <div class="logo">
+            <img src="imagens/anipet.png" alt="Logo AniPet" />
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Pesquisar..." />
+            <button><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+    
+        <div class="direita-header">
+          <div class="carrinho-icone">
+            <a href="carrinho.html">
+              <i class="bi bi-cart3"></i>
+              <span id="contador-carrinho">0</span>
+            </a>
+          </div>
+          <div class="login-btn">
+            <a href="login.html">
+              <i class="bi bi-box-arrow-in-right"></i> Entrar
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="menu-toggle" onclick="document.querySelector('.navbar').classList.toggle('ativo')">
+        ☰
+      </div>
+    
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#loja-caes">Loja Cães</a></li>
+          <li><a href="#loja-gatos">Loja Gatos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>       
+
+    <section class="banner">
+      <div class="banner-texto">
+        <h1>Seu pet merece o melhor cuidado</h1>
+        <p>Oferecemos carinho, atenção e produtos de qualidade.</p>
+        <a href="#loja" class="btn-cta">Ver produtos</a>
+      </div>
+    </section>
+    
+    <section class="sobre animar" id="sobre">
+      <div class="conteudo-sobre">
+        <div class="texto-sobre">
+          <h2>Por que a AniPet?</h2>
+          <p>
+            Muito mais que um pet shop, a <strong>AniPet</strong> nasceu do amor incondicional pelos animais.
+            Aqui, seu companheiro de quatro patas encontra produtos selecionados com carinho, 
+            serviços de qualidade e uma equipe apaixonada por bem-estar animal.
+            Cuidamos do seu pet como se fosse da nossa família.
+          </p>
+    
+          <div class="beneficios-sobre">
+            <div class="beneficio scroll-anim">
+              <i class="bi bi-shield-check"></i>
+              <p>Profissionais qualificados</p>
+            </div>
+            <div class="beneficio scroll-anim">
+              <i class="bi bi-truck"></i>
+              <p>Entrega rápida e segura</p>
+            </div>
+            <div class="beneficio scroll-anim">
+              <i class="bi bi-emoji-heart-eyes"></i>
+              <p>Atendimento com carinho</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="imagens-sobre">
+          <img src="imagens/photo-1611173622933-91942d394b04.avif" alt="Pet tomando vacina" class="scroll-anim" />
+          <img src="imagens/pet2.jpg" alt="Banho e tosa" class="scroll-anim" />
+          <img src="imagens/pet4.jpg" alt="Loja de petshop" class="scroll-anim" />
+        </div>
+      </div>
+    </section>    
+
+      </div>
+    </section>    
+    
+    <section class="cards" id="servicos">
+      <div class="card">
+        <i class="bi bi-scissors"></i>
+        <h3>Banho & Tosa</h3>
+      </div>
+      <div class="card">
+        <i class="bi bi-capsule"></i>
+        <h3>Vacinas</h3>
+      </div>
+      <div class="card">
+        <i class="bi bi-bag-heart"></i>
+        <h3>Loja</h3>
+      </div>
+      <div class="card">
+        <i class="bi bi-heart-pulse"></i>
+        <h3>Consultas</h3>
+      </div>
+    </section>
+
+    <section class="loja" id="loja-caes">
+      <h2 class="titulo-secao">Produtos para Cães</h2>
+      <div class="produtos-container">
+        <div class="produto-card">
+          <img src="imagens/produto1.png" alt="Ração Premium">
+          <h3>Ração Pedigree</h3>
+          <p class="preco">R$ 89,90</p>
+          <button class="btn-add-carrinho" 
+                  data-nome="Ração Pedigree" 
+                  data-preco="89.90" 
+                  data-img="imagens/produto1.png">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        
+        <div class="produto-card">
+          <img src="imagens/produto2.png" alt="Brinquedo de Borracha">
+          <h3>Brinquedo de Borracha</h3>
+          <p class="preco">R$ 25,00</p>
+          <button class="btn-add-carrinho" 
+                  data-nome="Brinquedo de Borracha" 
+                  data-preco="25.00" 
+                  data-img="imagens/produto2.png">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        
+        <div class="produto-card">
+          <img src="imagens/produto3.png" alt="Shampoo Pet">
+          <h3>Shampoo Beeps Estopinha 2 em 1 Pet Society 500ml</h3>
+          <p class="preco">R$ 39,90</p>
+          <button class="btn-add-carrinho" 
+                  data-nome="Shampoo Beeps" 
+                  data-preco="39.90" 
+                  data-img="imagens/produto3.png">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        
+        <div class="produto-card">
+          <img src="imagens/produto4.png" alt="Caminha Aconchegante">
+          <h3>Cama Casinha Pet</h3>
+          <p class="preco">R$ 119,90</p>
+          <button class="btn-add-carrinho" 
+                  data-nome="Cama Casinha Pet" 
+                  data-preco="119.90" 
+                  data-img="imagens/produto4.png">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        
+        <div class="produto-card">
+          <img src="imagens/produto5.png" alt="Coleira Estilosa">
+          <h3>Coleira Estilosa</h3>
+          <p class="preco">R$ 39,90</p>
+          <button class="btn-add-carrinho" 
+                  data-nome="Coleira Estilosa" 
+                  data-preco="39.90" 
+                  data-img="imagens/produto5.png">
+            Adicionar ao carrinho
+          </button>
+        </div>
+        
+        <div class="produto-card">
+          <img src="imagens/produto6.png" alt="Petiscos Naturais">
+          <h3>Petiscos Naturais</h3>
+          <p class="preco">R$ 17,80</p>
+          <button class="btn-add-carrinho" 
+                  data-nome="Petiscos Naturais" 
+                  data-preco="17.80" 
+                  data-img="imagens/produto6.png">
+            Adicionar ao carrinho
+           
+              </div>
+            </section>
+            
+            <section class="loja" id="loja-gatos">
+              <h2 class="titulo-secao">Produtos para Gatos</h2>
+              <div class="produtos-container">
+                <div class="produto-card">
+                  <img src="imagens/gato1.png" alt="Ração Whiskas Gatos Adultos">
+                  <h3>Ração Whiskas Gatos Adultos 1kg</h3>
+                  <p class="preco">R$ 29,90</p>
+                  <button class="btn-add-carrinho"
+                          data-nome="Ração Whiskas Gatos"
+                          data-preco="29.90"
+                          data-img="imagens/gato1.png">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+            
+                <div class="produto-card">
+                  <img src="imagens/gato2.png" alt="Varinha interativa com penas">
+                  <h3>Varinha Interativa com Penas</h3>
+                  <p class="preco">R$ 19,90</p>
+                  <button class="btn-add-carrinho"
+                          data-nome="Varinha Interativa Gatos"
+                          data-preco="19.90"
+                          data-img="imagens/gato2.png">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+            
+                <div class="produto-card">
+                  <img src="imagens/gato3.png" alt="Arranhador de papelão para gatos">
+                  <h3>Arranhador de Papelão</h3>
+                  <p class="preco">R$ 34,90</p>
+                  <button class="btn-add-carrinho"
+                          data-nome="Arranhador Gatos"
+                          data-preco="34.90"
+                          data-img="imagens/gato3.png">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+            
+                <div class="produto-card">
+                  <img src="imagens/gato4.png" alt="Caminha pelúcia para gatos">
+                  <h3>Caminha de Pelúcia Gatos</h3>
+                  <p class="preco">R$ 89,90</p>
+                  <button class="btn-add-carrinho"
+                          data-nome="Caminha Pelúcia Gatos"
+                          data-preco="89.90"
+                          data-img="imagens/gato4.png">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+            
+                <div class="produto-card">
+                  <img src="imagens/gato5.png" alt="Areia higiênica para gatos 4kg">
+                  <h3>Areia Higiênica 4kg</h3>
+                  <p class="preco">R$ 22,00</p>
+                  <button class="btn-add-carrinho"
+                          data-nome="Areia Gatos"
+                          data-preco="22.00"
+                          data-img="imagens/gato5.png">
+                    Adicionar ao carrinho
+                  </button>
+                </div>
+              </div>
+            </section>
+            
+  </div>
+</section>
+
+            
+          </button>
+        </div>
+
+      </div>
+    </section>    
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>Ajuda Rápida</h4>
+          <ul>
+            <li><a href="#">Como funciona o agendamento?</a></li>
+            <li><a href="#">Posso trocar um produto?</a></li>
+            <li><a href="#">Entregam na minha região?</a></li>
+            <li><a href="#">Formas de pagamento</a></li>
+            <li><a href="#">Política de devolução</a></li>
+          </ul>
+        </div>        
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#loja">Loja</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><i class="bi bi-telephone"></i> (11) 99999-0000</li>
+            <li><i class="bi bi-envelope"></i> contato@anipet.com.br</li>
+            <li><i class="bi bi-geo-alt"></i> Rua Pet Feliz, 123 - SP</li>
+          </ul>
+        </div>
+        <div class="footer-col redes">
+          <h4>Redes Sociais</h4>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 AniPet. Todos os direitos reservados.</p>
+      </div>
+    </footer>    
+    <script src="animations.js"></script>
+    <script>
+      const loginBtn = document.querySelector('.login-btn');
+    
+      const nomeUsuario = localStorage.getItem("nomeUsuario");
+    
+      if (nomeUsuario) {
+        loginBtn.innerHTML = `
+          <a href="perfil.html">
+            <i class="bi bi-person-circle"></i> Perfil
+          </a>
+        `;
+      }
+    </script>
+
+    <script src="carrinho.js"></script>
+
+  </body>
+</html>
