@@ -42,10 +42,12 @@
         </div>
       </div>
     
-      <div class="menu-toggle" onclick="document.querySelector('.navbar').classList.toggle('ativo')">
+      <div class="menu-toggle" role="button" aria-label="Abrir menu" tabindex="0"
+           onclick="document.querySelector('.navbar').classList.toggle('ativo')">
         ☰
       </div>
-    
+ 
+
       <nav class="navbar">
         <ul>
           <li><a href="#inicio">Início</a></li>
